@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} – {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="container">
+    <main class="content">
+      {{ content }}
+    </main>
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          {% for item in site.data.navigation %}
+            <li {% if page.url == item.url %}class="active"{% endif %}>
+              <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </aside>
+  </div>
+</body>
+</html>
