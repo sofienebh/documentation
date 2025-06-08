@@ -1,5 +1,5 @@
 title: "Mon Site Technique"
 baseurl: ""
-url: "https://sofienebh.github.io"
+url: "https://sofienebh.github.io/documentation"
 plugins:
   - jekyll-drawio
